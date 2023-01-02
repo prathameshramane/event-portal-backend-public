@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Invoice</title>
+    <!-- Tab icon -->
+
+</head>
+
+
+<body>
+    <div style="max-width: 1100px; margin: auto;">
+        <br>
+        <br>
+        <center>
+            <img src="/home/ryder/Pictures/logo.png" style="height: 100px;" />
+        </center>
+        <hr>
+        <br>
+        <br>
+
+        <h2>Event Details</h2>
+        <p><b>Unique Code: </b>{{unique_code}}</p>
+        <p><b>Name: </b> {{event_name}}</p>
+        <p><b>Amount Paid: </b> {{amount_paid}}</p>
+        <p><b>Event Head: </b> {{event_head}}</p>
+        <p><b>Contact: </b> {{head_contact_1}}/{{head_contact_2}}</p>
+
+        <br>
+        <br>
+
+        <h2>Participants Details</h2>
+        <p><b>Entry Type : </b> {{participant_type}}</p>
+        <p><b>Name : </b> {{participant_name}}</p>
+        <p><b>College : </b> {{participant_college}}</p>
+        <p><b>Branch: </b> {{participant_branch}}</p>
+        {% if participant_class %}<p><b>Class: </b>{{participant_class}}</p>{% endif %}
+        <p><b>Phone: </b> {{participant_phone}}</p>
+        <p><b>Email: </b> {{participant_email}}</p>
+
+        <br>
+        <br>
+
+        <h2>Registered By</h2>
+        <p><b>Name : </b> {{by_name}}</p>
+        <p><b>Branch: </b> {{by_branch}}</p>
+        <p><b>Phone: </b> {{by_phone}}</p>
+        <p><b>Email: </b> {{by_email}}</p>
+
+    </div>
+</body>
+
+</html>
